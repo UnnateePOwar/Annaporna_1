@@ -1,0 +1,80 @@
+:root {
+  --emerald: #10b981;
+  --muted: #6b7280;
+  --card-bg: #ffffffcc;
+  --glass: rgba(255, 255, 255, 0.92);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+#app {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #ecfdf5 0%, #ffffff 50%);
+  color: #063;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  padding: 18px;
+  border-right: 1px solid #def6e8;
+  background: var(--glass);
+  backdrop-filter: blur(6px);
+  animation: slideIn .45s ease;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  background: var(--emerald);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.12);
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.brand small {
+  color: var(--emerald);
+  font-weight: 600;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.nav a {
+  padding: 10px;
+}
